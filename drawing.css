@@ -1,0 +1,765 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+    overflow: hidden;
+    position: relative;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;  
+    background-color: #000000;
+}
+
+.mist {
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+}
+
+.sky {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+}
+
+.log1 {
+    position: absolute;
+    bottom: 5vh;
+    left: 10vw;
+    width: 1vw;  
+    height: 35vh;  
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.log2 {
+    position: absolute;
+    bottom: 5vh;
+    left: 45vw;
+    width: 1vw;  
+    height: 20vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.log3 {
+    position: absolute;
+    bottom: 5vh;
+    right: 10vw;
+    width: 1vw;  
+    height: 26vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.head {
+    position: absolute;
+    bottom: 18vh;
+    right: 41.49vw;
+    width: 2.5vw;  
+    height: 2.1vw;  
+    background-color: black; 
+    border-radius: 50%;
+}
+
+.face {
+    position: absolute;
+    transform: rotate(-23deg);
+    bottom: 17vh;
+    right: 42.7vw;
+    width: 0.7vw;  
+    height: 1.7vw;  
+    background-color: lightgray; 
+    border: 0.3vw solid black; 
+    border-radius: 50%;
+}
+
+.cap1 {
+    transform: rotate(93deg);
+    position: absolute;
+    bottom: 19vh;
+    right: 41.5vw;
+    width: 1.1vw;  
+    height: 2.3vw;  
+    background-color: black; 
+    border-radius: 50%;
+}
+
+.cap2 {
+    position: absolute;
+    transform: rotate(42deg);
+    bottom: 18.7vh;
+    right: 41vw;
+    width: 1.3vw;  
+    height: 1.6vw;  
+    background-color: black; 
+    border-radius: 50%;
+}
+
+.neck1 {
+    transform: rotate(14deg);
+    position: absolute;
+    bottom: 14vh;
+    right: 42vw;
+    width: 0.75vw;  
+    height: 2.5vw;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.neck2 {
+    transform: rotate(9deg);
+    position: absolute;
+    bottom: 3vh;
+    right: 42.1vw;
+    width: 1.5vw;  
+    height: 6vw;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.body1 {
+    transform: rotate(-103deg);
+    position: absolute;
+    bottom: 5vh;
+    right: 38vw;
+    width: 0;  
+    height: 0;  
+    border-left: 2vw solid transparent;
+    border-bottom: 9vh solid black;  
+    border-right: 8vw solid transparent; 
+}
+
+.body2 {
+    position: absolute;
+    bottom: 5vh;
+    right: 38.5vw;
+    width: 0;  
+    height: 0;  
+    border-left: 2vw solid transparent;
+    border-bottom: 7vh solid black;  
+    border-right: 3vw solid transparent; 
+}
+
+.birdhead {
+    position: absolute;
+    bottom: 17vh;
+    right: 35vw;
+    width: 1vw;  
+    height: 1vw;  
+    background-color: black; 
+    border-radius: 50%;
+}
+
+.birdbody {
+    position: absolute;
+    bottom: 16.2vh;
+    right: 33.5vw;
+    width: 2vw;  
+    height: 0.8vw;  
+    background-color: black; 
+    border-radius: 50%;
+}
+
+.beak {
+    position: absolute;
+    bottom: 17.5vh;
+    right: 35.4vw;
+    width: 0;  
+    height: 0;  
+    border-left: 0.7vw solid transparent;
+    border-bottom: 0.6vw solid black;  
+    border-right: 0.4vw solid transparent; 
+}
+
+.wing1 {
+    transform: rotate(-88deg);
+    position: absolute;
+    bottom: 14.5vh;
+    right: 32.4vw;
+    width: 0;  
+    height: 0;  
+    border-left: 2.6vw solid transparent;
+    border-bottom: 1.5vw solid black;  
+    border-right: 1.4vw solid transparent; 
+    border-radius: 50%;
+
+}
+
+.wing2 {
+   transform: rotate(-88deg);
+    position: absolute;
+    bottom: 14.6vh;
+    right: 32.85vw;
+    width: 0;  
+    height: 0;  
+    border-left: 2.6vw solid transparent;
+    border-bottom: 1.5vw solid black;  
+    border-right: 1.4vw solid transparent; 
+    border-radius: 50%;
+}
+
+.tail {
+    transform: rotate(-17deg);
+    position: absolute;
+    bottom: 17vh;
+    right: 32.5vw;
+    width: 2vw;  
+    height: 0.5vw;  
+    background-color: black; 
+    border-radius: 50%;
+}
+
+.branch1 {
+    transform: rotate(-1deg);
+    position: absolute;
+    bottom: 38.8vh;
+    left: 9.7vw;
+    width: 0.85vw;  
+    height: 11vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch2 {
+    transform: rotate(62deg);
+    position: absolute;
+    bottom: 35.2vh;
+    left: 13.4vw;
+    width: 0.85vw;  
+    height: 16vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch3 {
+    position: absolute;
+    bottom: 46vh;
+    left: 16.6vw;
+    width: 0.8vw;  
+    height: 35vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch4 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 41vh;
+    left: 6vw;
+    width: 0.85vw;  
+    height: 17vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch5 {
+    position: absolute;
+    bottom: 49vh;
+    left: 2.2vw;
+    width: 0.7vw;  
+    height: 20vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch6 {
+    position: absolute;
+    bottom: 49vh;
+    left: 5.9vw;
+    width: 0.7vw;  
+    height: 13vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch7 {
+    transform: rotate(-75deg);
+    position: absolute;
+    bottom: 54vh;
+    left: 13vw;
+    width: 0.7vw;  
+    height: 16vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch8 {
+    position: absolute;
+    bottom: 63vh;
+    left: 9.7vw;
+    width: 0.7vw;  
+    height: 16vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch9 {
+    transform: rotate(82deg);
+    position: absolute;
+    bottom: 66vh;
+    left: 21vw;
+    width: 0.7vw;  
+    height: 19vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch10 {
+    position: absolute;
+    bottom: 76vh;
+    left: 25.2vw;
+    width: 0.7vw;  
+    height: 12vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch11 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 68vh;
+    left: 7vw;
+    width: 0.7vw;  
+    height: 11vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch12 {
+    position: absolute;
+    bottom: 73vh;
+    left: 4.7vw;
+    width: 0.7vw;  
+    height: 12vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch13 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 18.2vh;
+    left: 42.6vw;
+    width: 0.85vw;  
+    height: 12vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch14 {
+    position: absolute;
+    bottom: 23.5vh;
+    left: 40vw;
+    width: 0.85vw;  
+    height: 20vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch15 {
+    transform: rotate(-13deg);
+    position: absolute;
+    bottom: 42vh;
+    left: 39vw;
+    width: 0.75vw;  
+    height: 19vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch16 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 45.8vh;
+    left: 41.3vw;
+    width: 0.7vw;  
+    height: 11.3vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch17 {
+    position: absolute;
+    bottom: 51vh;
+    left: 43.7vw;
+    width: 0.7vw;  
+    height: 15vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch18 {
+    position: absolute;
+    bottom: 31vh;
+    left: 51.3vw;
+    width: 0.7vw;  
+    height: 27vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch19 {
+    transform: rotate(60deg);
+    position: absolute;
+    bottom: 20vh;
+    left: 48vw;
+    width: 0.85vw;  
+    height: 16vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch20 {
+    transform: rotate(84deg);
+    position: absolute;
+    bottom: 23vh;
+    right: 7.5vw;
+    width: 0.85vw;  
+    height: 11vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch21 {
+    position: absolute;
+    bottom: 28.3vh;
+    right: 5.3vw;
+    width: 0.8vw;  
+    height: 53vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch22 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 36vh;
+    right: 3.8vw;
+    width: 0.7vw;  
+    height: 8vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch23 {
+    position: absolute;
+    bottom: 39.7vh;
+    right: 2.2vw;
+    width: 0.65vw;  
+    height: 15vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch24 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 50vh;
+    right: 7.5vw;
+    width: 0.7vw;  
+    height: 9vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch25 {
+    position: absolute;
+    bottom: 54.2vh;
+    right: 9.3vw;
+    width: 0.65vw;  
+    height: 19vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch26 {
+    transform: rotate(93deg);
+    position: absolute;
+    bottom: 14.45vh;
+    right: 17.75vw;
+    width: 0.85vw;  
+    height: 34vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch27 {
+    position: absolute;
+    bottom: 31.8vh;
+    right: 25.55vw;
+    width: 0.7vw;  
+    height: 42vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch28 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 44vh;
+    right: 22.7vw;
+    width: 0.7vw;  
+    height: 13vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch29 {
+    position: absolute;
+    bottom: 50vh;
+    right: 20vw;
+    width: 0.65vw;  
+    height: 15vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch30 {
+    transform: rotate(87deg);
+    position: absolute;
+    bottom: 61.85vh;
+    right: 20.2vw;
+    width: 0.7vw;  
+    height: 24vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch31 {
+    transform: rotate(5deg);
+
+    position: absolute;
+    bottom: 73.9vh;
+    right: 14.3vw;
+    width: 0.65vw;  
+    height: 18vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch32 {
+    transform: rotate(99deg);
+    position: absolute;
+    bottom: 58vh;
+    right: 29vw;
+    width: 0.7vw;  
+    height: 14vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.branch33 {
+    transform: rotate(-4deg);
+    position: absolute;
+    bottom: 65.4vh;
+    right: 32.6vw;
+    width: 0.65vw;  
+    height: 20vh;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.leaf {
+    position: absolute;
+    width: 2vw;
+    height: 1vw;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    z-index: 10; 
+}
+
+.leaf:nth-child(1) {
+    top: 20vh;
+    left: 15vw;
+    transform: rotate(30deg);
+
+}
+
+.leaf:nth-child(2) {
+    top: 38vh;
+    left: 17vw;
+}
+
+.leaf:nth-child(3) {
+    top: 21vh;
+    left: 25.5vw;
+}
+
+.leaf:nth-child(4) {
+    top: 22vh;
+    left: 20vw;
+    transform: rotate(30deg);
+
+}
+
+.leaf:nth-child(5) {
+    top: 20vh;
+    left: 10vw;
+}
+
+.leaf:nth-child(6) {
+    bottom: 48vh;
+    left: 10vw;
+    transform: rotate(-30deg);
+
+}
+
+.leaf:nth-child(7) {
+    bottom: 48vh;
+    left: 15vw;
+    transform: rotate(30deg);
+
+}
+
+.leaf:nth-child(8) {
+    bottom: 60vh;
+    left: 4.3vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(9) {
+    bottom: 65vh;
+    left: 2.3vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(10) {
+    bottom: 58vh;
+    left: 1vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(11) {
+    bottom: 80vh;
+    left: 3vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(12) {
+    bottom: 85vh;
+    left: 23.6vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(13) {
+    bottom: 42.5vh;
+    left: 38.5vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(14) {
+    bottom: 43vh;
+    left: 40.3vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(15) {
+    bottom: 58vh;
+    left: 36.5vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(16) {
+    bottom: 62vh;
+    left: 44vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(17) {
+    bottom: 52vh;
+    left: 51.7vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(18) {
+    bottom: 40vh;
+    left: 49.7vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(19) {
+    bottom: 89vh;
+    right: 12.55vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(20) {
+    bottom: 84vh;
+    right: 33.2vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(21) {
+    bottom: 70vh;
+    right: 30.6vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(22) {
+    bottom: 63vh;
+    right: 20.5vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(23) {
+    bottom: 55vh;
+    right: 18.3vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(24) {
+    bottom: 68vh;
+    right: 9.8vw;
+    transform: rotate(30deg);
+}
+
+.leaf:nth-child(25) {
+    bottom: 78vh;
+    right: 3.6vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(26) {
+    bottom: 49vh;
+    right: 0.74vw;
+    transform: rotate(-30deg);
+}
+
+.leaf:nth-child(27) {
+    bottom: 45vh;
+    right: 26vw;
+    transform: rotate(30deg);
+}
+
+.wind-container1, .wind-container2 {
+    transform: rotate(-176deg);
+    width: 40vw;  
+    height: 7vh;  
+    overflow: hidden;  
+    position: relative;
+}
+
+.wind1, .wind2 {
+    transform: rotate(-176deg);
+    width: 60vw;
+    height: 16vh;  
+    border: 0.3vw solid white;  
+    border-radius: 50%;
+    position: absolute;
+    top: 0;  
+    left: 0;
+}
